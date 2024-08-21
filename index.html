@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>My name is [Your Name]</p>
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>My name is [Your Name]</p>
+        <button id="toggle-button">Toggle Dark Mode</button>
+    </div>
+
+    <script>
+        // Toggle dark mode on button click
+        const toggleButton = document.getElementById('toggle-button');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
