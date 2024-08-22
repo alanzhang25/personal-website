@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Alan Zhang</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="skier-container">
+        <div class="emoji-skier">⛷️</div>  <!-- Moving Skier Emoji -->
+    </div>
     <div class="container">
-        <h1>Hello World</h1>
-        <p>My name is [Your Name]</p>
-        <button id="toggle-button">Toggle Dark Mode</button>
+        <div class="emojis">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/1200px-Tesla_logo.png" alt="tesla" class="logo">
+            <img src="https://pbs.twimg.com/profile_images/1605983173107539968/E6Pkp7Xj_400x400.png" alt="credit karma" class="logo">
+            <img src="https://assets.wheelhouse.com/media/_solution_logo_08292022_31610321.png" alt="gusto" class="logo">
+            <img src="https://embed-ssl.wistia.com/deliveries/79d4d7dbb14bfdeb2a44edb93d9a1404.png" alt="tyler technologies" class="logo">
+        </div>
+        <h1>Alan Zhang</h1>
+        <div class="links">
+            <a href="Alan-Zhang-Resume.pdf" target="_blank">resume</a> |
+            <a href="https://www.linkedin.com/in/alanzhang-/" target="_blank">linkedin</a> |
+            <a href="https://github.com/alanzhang25" target="_blank">github</a>
+        </div>
     </div>
 
-    <script>
-        // Toggle dark mode on button click
-        const toggleButton = document.getElementById('toggle-button');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
