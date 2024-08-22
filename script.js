@@ -23,7 +23,7 @@ function getRandomStartPosition() {
 
 let { x, y } = getRandomStartPosition();
 
-let speed = 10; 
+let speed = 4; 
 let vx = speed;
 let vy = speed; 
 
