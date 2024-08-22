@@ -38,11 +38,11 @@ function updateSkierPosition() {
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
 
-    // Update position
+    
     x += vx;
     y += vy;
 
-    // Bounce off walls
+
     if (x <= 0 || x + skierWidth >= windowWidth) {
         vx *= -1; // Reverse x direction
         vx += getRandomAngleAdjustment(); // Add slight randomness to the x velocity
@@ -71,12 +71,12 @@ function updateSkierPosition() {
         vy += getRandomAngleAdjustment(); // Add slight randomness to the y velocity
     }
 
-    // Update skier position
+
     skier.style.transform = `translate(${x}px, ${y}px)`;
 
-    // Call the function again on the next animation frame
+
     requestAnimationFrame(updateSkierPosition);
 }
 
-// Start the animation
+
 requestAnimationFrame(updateSkierPosition);
